@@ -6,6 +6,11 @@
         </div>
 
         <div class="nav-links">
+            <a [routerLink]="['/app-home-page']" class="nav-link">
+                <i class="fas fa-home"></i> Home
+                <span class="underline"></span>
+            </a>
+            
             <a [routerLink]="['/app-origin']" class="nav-link">
                 <i class="fa-solid fa-map-marker-alt"></i> Origin of Disaster
                 <span class="underline"></span>
@@ -16,19 +21,9 @@
                 <span class="underline"></span>
             </a>
 
-            <a href="#about" class="nav-link">
-                <i class="fa-solid fa-info-circle"></i> About Us
-                <span class="underline"></span>
-            </a>
-
             <a [routerLink]="['/app-login']" class="user-icon">
                 <i class="fa-solid fa-user"></i> Login
             </a>
         </div>
-
-        <button class="language-toggle">
-            <i class="fa-solid fa-language"></i>
-            <span>Mudar para Inglês</span>
-        </button>
     </div>
 </header>

@@ -41,14 +41,14 @@
 .social-icons a {
     font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
+    color:#000000;
 }
 
 .social-icons a:hover {
-    color: #3b82f6; /* hover:text-blue-500 */
+    color: #013c9b;
     transform: scale(1.1);
 }
 
-/* Testemunho e Doação */
 .testimony, .donation {
     display: flex;
     justify-content: center;
@@ -59,10 +59,11 @@
 .testimony a, .donation a {
     font-size: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
+    color:#000000;
 }
 
 .testimony a:hover, .donation a:hover {
-    color: #3b82f6;
+    color: #013c9b;
     transform: scale(1.1);
 }
 

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { Desastre } from '../../shared/model/desastre';
 import { DESASTRES } from '../../shared/model/DESASTRES';
 import { DesastreRestService } from "../../shared/services/desastre-rest.service";
+import { MensagemSweetService } from "../../shared/services/mensagem-sweet.service";
 
 
 @Component({
@@ -15,7 +16,11 @@ import { DesastreRestService } from "../../shared/services/desastre-rest.service
 export class ListagemComponent implements OnInit {
   DESASTRES: Desastre[] = [];
 
-  constructor(private desastreService: DesastreRestService, private roteador: Router) {
+  constructor(
+    private desastreService: DesastreRestService, 
+    private mensagemService: MensagemSweetService,
+    private roteador: Router
+  ) {
   }
 
   ngOnInit() {
@@ -31,8 +36,11 @@ export class ListagemComponent implements OnInit {
             console.log('removido');
             const desastreIndx = this.DESASTRES.findIndex(desastre => desastre.id === desastreARemover.id);
             this.DESASTRES.splice(desastreIndx, 1);
+            this.mensagemService.sucesso('Desastre excluído com sucesso!');
           }
       );
+    } else {
+        this.mensagemService.sucesso('Erro ao excluir desastre!');
     }
   }
 
