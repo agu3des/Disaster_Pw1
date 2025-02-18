@@ -47,3 +47,8 @@ button {
 button:hover {
   background-color: #000e4d;
 }
+
+h1 {
+  text-align: center;
+  color: #60A7DD;
+}
