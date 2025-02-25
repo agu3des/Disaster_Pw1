@@ -14,12 +14,13 @@
     },
     {
       "id": "09c8",
-      "dataDeOcorrencia": "05/05/1977",
+      "dataDeOcorrencia": "05/05/1974",
       "duracaoDias": "55",
       "intensidadeEscala": "5",
-      "qtdVitimas": "50",
+      "qtdVitimas": "51",
       "tipo": "incendio",
       "regiao": [
+        "sudeste",
         "centroOeste"
       ],
       "imagemUrl": "https://smastr16.blob.core.windows.net/2001/2023/09/Foto_BOI_59_2022_EE_Bananal_Fogo_Ativo-300x225.jpg"
@@ -100,9 +101,9 @@
       "id": "d5b2",
       "dataDeOcorrencia": "01/03/2015",
       "duracaoDias": "8",
-      "intensidadeEscala": "7",
+      "intensidadeEscala": "2",
       "qtdVitimas": "5",
-      "tipo": "inundacao",
+      "tipo": "seca",
       "regiao": [
         "norte",
         "nordeste"

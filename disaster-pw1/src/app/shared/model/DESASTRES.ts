@@ -1,4 +1,4 @@
-import {Desastre} from "./desastre";
+import { Desastre } from "./desastre";
 
 export const DESASTRES: Desastre[] = [
     
